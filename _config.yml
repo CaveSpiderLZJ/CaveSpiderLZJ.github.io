@@ -11,7 +11,6 @@ baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 collections:
   publications:
     output: true
-    permalink: /:collection/:name
 
 # Publish posts or collection documents with a future date.
 future: true
