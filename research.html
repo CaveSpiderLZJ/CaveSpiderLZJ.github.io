@@ -1,0 +1,62 @@
+---
+layout: default
+title: "Research"
+description: "「春眠不觉晓，处处问题不少」"
+header-img: "img/research-bg.jpg"
+header-mask: 0.5
+---
+
+<!--
+Credits: this page shamelessly borrowed a lot from:
+https://github.com/kitian616/jekyll-TeXt-theme
+-->
+<!-- Page Header -->
+{% include intro-header.html type='page' short=false %}
+
+<div class="container">
+	<div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+			<!-- Article List -->
+			<div class="mini-post-list js-result">
+				{%- assign _sorted_list = site.publications -%}
+				{%- assign _sorted_list = _sorted_list | sort: 'date' -%}
+				{%- assign _sorted_list = _sorted_list | reverse -%}
+
+
+				{%- for _article in _sorted_list -%}
+
+                    {% comment %} group by year {% endcomment %}
+                    {%- assign _currentdate = _article.date | date: '%Y' -%}
+                    {%- if _currentdate != _date -%}
+                        {%- unless forloop.first -%}
+                            </section>
+                        {%- endunless -%}
+                        <section>
+                        <span class="fa listing-seperator">
+                            <span class="tag-text">{{ _currentdate }}</span>
+                        </span>
+                        {%- assign _date = _currentdate -%}
+                    {%- endif -%}
+
+                    <div class="post-preview item">
+                        <a href="{{ _article.url | prepend: site.baseurl }}">
+                            <h2 class="post-title">
+                                {{ _article.title }}
+                            </h2>
+                            {% if _article.subtitle %}
+                                <h3 class="post-subtitle">
+                                    {{ _article.subtitle }}
+                                </h3>
+                            {% endif %}
+                        </a>
+                        <hr>
+                    </div>
+                    {%- if forloop.last -%}
+                        </section>
+                    {%- endif -%}
+				{% endfor %}
+			</div>
+		</div>
+    </div>
+</div>
