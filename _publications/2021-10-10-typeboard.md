@@ -8,14 +8,6 @@ header-style: text
 
 ![Teaser](/img/2021-10-10/typeboard_teaser.jpg)
 
-In this work, we aim to address two common problems associated with tablet text entry.
-Firstly, users often experience fatigue due to the inability to rest their hands on the tablet while typing.
-Second, users may trigger unwanted inputs by accidental touches.
-To tackle these issues, we collected typing data from 16 users, labeled each touch as intentional or not,
-and trained an SVM model to accurately recognize unintentional touches (accuracy = 98.88%).
-Our evaluation showed that TypeBoard effectively reduces fatigue and improves input speed.
-It it also worth noting that this work is my first project at [Tsinghua HCI Lab](https://pi.cs.tsinghua.edu.cn).
-
 ## Paper Abstract
 
 Text input is essential in tablet computer interaction.
