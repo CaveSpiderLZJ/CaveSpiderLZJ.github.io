@@ -30,4 +30,4 @@ burden for IMU-based motion capture and related tasks driven by human poses.
 
 ## External Links
 [[Paper]](/paper/PoseAugment.pdf)
-[[DOI]](https://doi.org/10.1007/978-3-031-73411-3_4)
+[[DOI]](https://dl.acm.org/doi/10.1007/978-3-031-73411-3_4)

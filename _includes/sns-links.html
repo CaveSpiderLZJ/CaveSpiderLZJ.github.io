@@ -28,22 +28,12 @@
     </a>
   </li>
   {% endif %}
-  {% if site.bilibili_userid %}
+  {% if site.xiaohongshu_userid %}
   <li>
-    <a target="_blank" href="https://space.bilibili.com/{{ site.bilibili_userid }}">
+    <a target="_blank" href="https://www.xiaohongshu.com/user/profile/{{ site.xiaohongshu_userid }}">
       <span class="fa-stack fa-lg">
         <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa-brands fa-bilibili fa-stack-1x fa-inverse"></i>
-      </span>
-    </a>
-  </li>
-  {% endif %}
-  {% if site.zhihu_username %}
-  <li>
-    <a target="_blank" href="https://www.zhihu.com/people/{{ site.zhihu_username }}">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa-brands fa-zhihu fa-stack-1x fa-inverse"></i>
+        <i class="fa-solid fa-book fa-stack-1x fa-inverse"></i>
       </span>
     </a>
   </li>
