@@ -1,0 +1,15 @@
+---
+layout: publication
+title: "[UIST'25] InterQuest: A Mixed-Initiative Framework for Dynamic User Interest Modeling in Conversational Search"
+subtitle: 'Yu Mei, Yuanxi Wang, Shiyi Wang, Qingyang Wan, <b>Zhuojun Li</b>, Chun Yu*, Weinan Shi*, Yuanchun Shi'
+author: "CaveSpider"
+header-style: text
+---
+
+## Paper Abstract
+
+In online information-seeking tasks (e.g., for products and restaurants), users seek information that aligns with their individual preferences to make informed decisions. However, existing systems often struggle to infer users' implicit interests—unstated yet essential preference factors that directly impact decision quality. Our formative study reveals that User-Centric Knowledge—cross-task persistent preference attributes of users (e.g., "user cares about functionality details for electronics") — serves as a key indicator for resolving users' implicit interests. However, constructing such knowledge from task-specific data alone is insufficient due to three types of uncertainties—cold-start limitation, content accuracy, and scope applicability — which require user-provided information for knowledge alignment. Based on these insights, we present InterQuest, an LLM-based conversational search agent that dynamically models user interests. InterQuest combines two strategies: (1) Dynamic User Knowledge Modeling, which infers and adjusts the content and scope of User-Centric Knowledge, and (2) Uncertainty-Driven Questioning, where InterQuest proactively asks questions to resolve knowledge uncertainties. A user study with 18 participants demonstrates that InterQuest outperforms the baselines in user interest inference, accuracy of user knowledge modeling, and the overall information-seeking experience. Additionally, our findings provide valuable design implications for improving mixed-initiative user modeling in future systems.
+
+## External Links
+[[Paper]](/paper/InterQuest.pdf)
+[[DOI]](https://dl.acm.org/doi/abs/10.1145/3746059.3747753)
