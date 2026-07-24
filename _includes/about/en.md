@@ -20,4 +20,4 @@ mainly capturing landscapes, night skies, and everyday life.
 * Tsinghua University Ski Team (captain in 24-25 season)· [2019 – Present]
 * B.S., Department of Computer Science, Tsinghua University · [2019 – 2023]
 
-(Last update: 2026-04-20)
+(Last update: 2026-07-25)
